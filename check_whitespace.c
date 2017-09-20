@@ -43,6 +43,7 @@ char* strip(char* str) {
   for (i=first_non_space; i<=last_non_space; ++i) {
     result[i-first_non_space] = str[i];
   }
+	free(result);
   // Place the null terminator at the end of the result string.
   result[i-first_non_space] = '\0';
 
