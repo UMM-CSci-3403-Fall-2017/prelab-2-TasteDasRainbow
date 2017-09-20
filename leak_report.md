@@ -1,4 +1,4 @@
 # Leak report
 
-_Use this document to describe whatever memory leaks you find in `clean_whitespace.c` and how you might fix them. You should also probably remove this explanatory text._
+Line 41: calloc command is used to allocate data, and is not freed later on, causing the program to withhold memory, which I have changed.
 
